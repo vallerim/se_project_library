@@ -225,6 +225,8 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
+  background-image: url(../images/staff_picks_background.jpg);
+  background-position: center;
 }
 
 .staff__title {
@@ -232,16 +234,29 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #ffffff;
 }
 
 .staff__subtitle {
   text-align: center;
   font-size: 20px;
+  color: #ffffff;
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
+  margin-bottom: 68px;
 }
 
+.staff__card {
+  max-width: 760px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0 auto;
+}
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
 .card {
@@ -249,6 +264,11 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  height: 420px;
+  width: 360px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 .card__content {
@@ -273,6 +293,7 @@
 
 .card__footer {
   margin: 0;
+  margin-top: auto;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
