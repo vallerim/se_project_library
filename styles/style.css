@@ -29,7 +29,6 @@
 }
 
 .nav__links {
-  /* Reset default list styles here */
   margin-top: 8px;
   display: flex;
   align-items: center;
@@ -43,9 +42,8 @@
   text-decoration: none;
   font-weight: bold;
 }
-
 .nav__link:hover {
-  color: #1f59c9;
+  color: #1f69c9;
 }
 
 .header__title {
@@ -257,7 +255,7 @@
   margin-bottom: 68px;
 }
 
-.staff__card {
+.staff__cards {
   max-width: 760px;
   align-items: center;
   display: flex;
@@ -414,6 +412,7 @@
 .footer__columns {
   display: flex;
   min-height: 224px;
+  align-items: baseline;
 }
 
 .footer__column_content_hours {
@@ -459,7 +458,7 @@
 .footer__column-link:hover {
   color: #c1c1c1;
 }
-.footer .footer__social-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
