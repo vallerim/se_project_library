@@ -417,11 +417,11 @@
   flex-direction: column;
 }
 
-.footer__column_content_hours {
+.footer__columns_content_hours {
   margin-left: auto;
 }
 
-.footer__column_content_social {
+.footer__columns_content_social {
   margin-left: 100px;
 }
 
@@ -447,11 +447,11 @@
   margin-bottom: 0;
 }
 
-.footer__column-heading {
+.footer__columns-heading {
   margin: 0 0 20px;
 }
 
-.footer__column-link {
+.footer__columns-link {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -459,7 +459,7 @@
   display: flex;
   align-items: center;
 }
-.footer_column-link:hover {
+.footer_columns-link:hover {
   color: #c1c1c1;
 }
 
