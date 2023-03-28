@@ -20,7 +20,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .logo {
@@ -29,7 +29,7 @@
 }
 
 .nav__links {
-  margin-top: 8px;
+  margin: 8px 0 0 0;
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -50,7 +50,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin-top: 150px;
+  margin: 150px 0 0 0;
   max-width: 544px;
 }
 
@@ -58,7 +58,7 @@
   font-size: 20px;
   line-height: 30px;
   max-width: 532px;
-  margin-top: 32px;
+  margin-top: 32px 0 0 0;
 }
 
 .header__image {
@@ -188,9 +188,8 @@
 }
 
 .person_name_feynman {
-  position: absolute;
   top: -30px;
-  right: 319px;
+  left: 319px;
 }
 .person_name_burbidge {
   top: 96px;
@@ -252,7 +251,6 @@
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
-  margin-bottom: 68px;
 }
 
 .staff__cards {
@@ -263,7 +261,7 @@
   justify-content: center;
   gap: 40px;
   list-style: none;
-  margin: 0 auto;
+  margin: 68px auto 0 auto;
 }
 
 .card {
@@ -273,8 +271,6 @@
   box-sizing: border-box;
   height: 420px;
   width: 360px;
-  flex-wrap: wrap;
-  justify-content: space-around;
   gap: 40px;
 }
 
@@ -306,7 +302,6 @@
   color: #838383;
   /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
   /* In our case, this pushes the element down to the bottom */
-  margin-top: auto;
 }
 
 .membership {
@@ -329,14 +324,13 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
-  flex-basis: 220px;
-  align-items: center;
-  gap: 40px;
+  width: 220px;
 }
 
 .step__title {
@@ -365,6 +359,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .about__title {
@@ -375,20 +370,22 @@
   font-weight: 500;
   z-index: 1;
   max-width: 154px;
+  margin: 0 120px 0 0;
 }
 
 .about__content {
-  position: relative;
-  left: 120px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .about__paragraph {
-  margin-bottom: 32px;
+  margin: 0 0 32px;
+}
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -399,20 +396,21 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: #fff;
-  padding: 57px 102px 60px 80px;
+  min-height: 224px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
   display: flex;
-  min-height: 224px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .footer__column_content_hours {
@@ -444,6 +442,7 @@
 
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .footer__column-link {
