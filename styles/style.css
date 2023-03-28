@@ -406,11 +406,12 @@
   min-height: 224px;
   font-size: 16px;
   line-height: 20px;
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__columns {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .footer__column_content_hours {
@@ -419,6 +420,7 @@
 
 .footer__column_content_social {
   margin-left: 100px;
+  margin-right: 102px;
 }
 
 .footer__logo {
